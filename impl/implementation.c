@@ -13,16 +13,6 @@
 
 #include "../io300.h"
 
-
-
-/*
-    student.c
-    Fill in the following stencils
-*/
-
-/*
-    When starting, you might want to change this for testing on small files.
-*/
 #ifndef CACHE_SIZE
 #define CACHE_SIZE 4096
 #endif
