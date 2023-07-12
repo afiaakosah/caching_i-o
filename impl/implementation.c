@@ -108,8 +108,6 @@ static void dbg(struct io300_file *f, char *fmt, ...) {
 */
 int refill_cache(struct io300_file *const f){
 
-    //check if EOF before calling read? 
-
     f->cache_start = f->curr_pos;
     int read_return = pread(f->fd, f->cache, CACHE_SIZE, f->curr_pos);
     f->stats.read_calls++;
